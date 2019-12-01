@@ -11,11 +11,11 @@ import javax.servlet.MultipartConfigElement;
 @Configuration
 @ComponentScan(basePackages = {"trelloiii","sql"},basePackageClasses =ConfigClass.class)
 public class ConfigClass {
-//    @Bean
-//    MultipartConfigElement multipartConfigElement() {
-//        MultipartConfigFactory factory = new MultipartConfigFactory();
-//        factory.setMaxFileSize(DataSize.parse("10240KB"));
-//        factory.setMaxRequestSize(DataSize.parse("102400KB"));
-//        return factory.createMultipartConfig();
-//    }
+    @Bean
+    MultipartConfigElement multipartConfigElement() {
+        MultipartConfigFactory factory = new MultipartConfigFactory();
+        factory.setMaxFileSize(DataSize.parse("20MB"));
+        factory.setMaxRequestSize(DataSize.parse("20MB"));
+        return factory.createMultipartConfig();
+    }
 }

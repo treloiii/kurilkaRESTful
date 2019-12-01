@@ -8,5 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main {
     public static void main(String...args){
         SpringApplication.run(Main.class,args);
+//        String pointer="','";
+//        String name="suka";
+//        String message="sosatb";
+//        String fileName="1111111111232323";
+//        String query="INSERT INTO kurilka_msg (name,message,img,img_message) VALUES('"+name+pointer+message+pointer+fileName+pointer+message+"');";
+//        System.out.println(query);
     }
 }
