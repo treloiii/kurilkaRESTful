@@ -9,7 +9,7 @@ import org.springframework.util.unit.DataSize;
 import javax.servlet.MultipartConfigElement;
 
 @Configuration
-@ComponentScan(basePackages = {"trelloiii"},basePackageClasses =ConfigClass.class)
+@ComponentScan(basePackages = {"trelloiii","sql"},basePackageClasses =ConfigClass.class)
 public class ConfigClass {
 //    @Bean
 //    MultipartConfigElement multipartConfigElement() {
