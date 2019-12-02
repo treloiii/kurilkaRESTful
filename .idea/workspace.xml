@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a512fd-b202-4a0b-921b-da6a8a21a604" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trelloiii/ConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trelloiii/ConfigClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trelloiii/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trelloiii/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/trelloiii/ConfigClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trelloiii/ConfigClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/trelloiii/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trelloiii/Controller.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,6 +38,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/sql" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nikkr\Desktop\Java Projects\trelloiii\src\main\java\sql" />
     </key>

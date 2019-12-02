@@ -1,5 +1,6 @@
 package trelloiii;
 
+import Utils.Utils;
 import com.sun.javafx.binding.StringFormatter;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,14 +19,17 @@ import java.util.List;
 public class Controller {
     @Autowired
     ResultedQuery rq;
+    @Autowired
+    Utils utils;
     @RequestMapping("/upload/img")
     public String uploadImage(@RequestParam("file") MultipartFile file,@RequestParam(value = "name")String name,@RequestParam(value = "message") String message){
         try {
-            byte[] imageByte=file.getBytes();
+//            byte[] imageByte=file.getBytes();
             Timestamp timestamp=new Timestamp(System.currentTimeMillis());
             String fileName=String.valueOf(timestamp.getTime());
-            String directory="/home/std/kurilkahttp/static/"+fileName+".jpg";
-            new FileOutputStream(directory).write(imageByte);
+            String directory="/home/std/kurilkahttp/static/";
+//            new FileOutputStream(directory).write(imageByte);
+            utils.fileUpload(directory,fileName,file);
             String pointer="','";
             String query="INSERT INTO kurilka_msg (name,message,img,img_message) VALUES('"+name+pointer+message+pointer+fileName+pointer+message+"');";
             rq.voidQuery(query);
