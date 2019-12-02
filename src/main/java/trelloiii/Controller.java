@@ -8,7 +8,10 @@ import org.springframework.web.multipart.MultipartFile;
 import sql.ResultedQuery;
 
 import java.io.FileOutputStream;
+import java.sql.ResultSet;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -47,5 +50,27 @@ public class Controller {
             return "error"+e;
         }
     }
+
+    @RequestMapping("get/messages")
+    public List<Message> getMessages(){
+        try{
+            String query="SELECT * FROM kurilka_msg";
+            List<Message> res=new ArrayList<>();
+            ResultSet rs=rq.getResultSet(query);
+            while(rs.next()){
+                Message tmp=new Message(rs.getInt("id"),rs.getString("name"),
+                                        rs.getString("message"),rs.getString("img"),
+                                        rs.getString("img_message"));
+                res.add(tmp);
+            }
+            return res;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
 
 }
