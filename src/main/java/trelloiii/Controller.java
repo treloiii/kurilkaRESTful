@@ -26,10 +26,11 @@ public class Controller {
         try {
 //            byte[] imageByte=file.getBytes();
             Timestamp timestamp=new Timestamp(System.currentTimeMillis());
+            System.out.println(file.getContentType());
             String fileName=String.valueOf(timestamp.getTime());
             String directory="/home/std/kurilkahttp/static/";
 //            new FileOutputStream(directory).write(imageByte);
-            utils.fileUpload(directory,fileName,file);
+            System.out.println(utils.fileUpload(directory,fileName,file));
             String pointer="','";
             String query="INSERT INTO kurilka_msg (name,message,img,img_message) VALUES('"+name+pointer+message+pointer+fileName+pointer+message+"');";
             rq.voidQuery(query);
