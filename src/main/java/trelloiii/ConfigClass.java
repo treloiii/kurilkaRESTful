@@ -14,8 +14,8 @@ public class ConfigClass {
     @Bean
     MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
-        factory.setMaxFileSize(DataSize.parse("20MB"));
-        factory.setMaxRequestSize(DataSize.parse("20MB"));
+        factory.setMaxFileSize(DataSize.ofBytes(104857600));
+        factory.setMaxRequestSize(DataSize.ofBytes(104857600));
         return factory.createMultipartConfig();
     }
 }

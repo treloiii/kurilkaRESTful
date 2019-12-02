@@ -16,9 +16,9 @@ public class Controller {
     @Autowired
     ResultedQuery rq;
     @RequestMapping("/upload/img")
-    public String uploadImage(@RequestParam("file") String file,@RequestParam(value = "name")String name,@RequestParam(value = "message") String message){
+    public String uploadImage(@RequestParam("file") MultipartFile file,@RequestParam(value = "name")String name,@RequestParam(value = "message") String message){
         try {
-            byte[] imageByte= Base64.decodeBase64(file);
+            byte[] imageByte=file.getBytes();
             Timestamp timestamp=new Timestamp(System.currentTimeMillis());
             String fileName=String.valueOf(timestamp.getTime());
             String directory="/home/std/kurilkahttp/static/"+fileName+".jpg";

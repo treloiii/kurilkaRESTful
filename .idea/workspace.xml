@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a512fd-b202-4a0b-921b-da6a8a21a604" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sql/ResultedQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sql/ResultedQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trelloiii/ConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trelloiii/ConfigClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trelloiii/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trelloiii/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trelloiii/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trelloiii/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/ResultedQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/ResultedQuery.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/trelloiii/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trelloiii/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/trelloiii/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trelloiii/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/kurilka.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kurilka.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/trelloiii-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/trelloiii-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -99,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
